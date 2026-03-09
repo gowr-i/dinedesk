@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #fff9ec;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #fff;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #7b1e1e;
+}
+.logo span {
+  color: #000;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  height: 300px;
+  background: url("my_pic.png") center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay h1 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.hero-overlay button {
+  padding: 12px 30px;
+  background: #7b1e1e;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.order-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.order-card {
+  width: 380px;
+  background: #cbb5a9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background: #5a1a1a;
+  color: #fff;
+  margin-top: 12px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.qty button {
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.qty span {
+  margin: 0 8px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.place-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4b0f0f;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+

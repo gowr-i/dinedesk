@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DineDesk - Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+       <h2 id="tableNumber">Table -</h2>
+
+<p>Subtotal: <span id="subtotal">₹0</span></p>
+
+<p>Tax (8.5%): <span id="tax">₹0</span></p>
+
+<h3>Total: <span id="totalAmount">₹0</span></h3>
+
+
+
+
+
+        
+
+        <h3>Payment Method</h3>
+
+        <div class="payment-methods">
+
+  <div id="card" class="method" onclick="selectPayment('card')">
+    Card
+  </div>
+
+  <div id="cash" class="method" onclick="selectPayment('cash')">
+    Cash
+  </div>
+
+  <div id="upi" class="method" onclick="selectPayment('upi')">
+    UPI
+  </div>
+
+</div>
+
+<button id="payButton" class="pay-btn" onclick="completePayment()">
+  Complete Payment
+</button>
+
+
+    </div>
+</div>
+
+<script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DineDesk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">🍴 Dine<span>Desk</span></div>
+    <nav>
+      <a href="#">Orders</a>
+      <!-- ✅ Billing linked to order status -->
+      <a href="order-status.html">Billing</a>
+      <a href="#">Review</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <button id="scrollBtn">Place Order</button>
+    </div>
+  </section>
+
+  <section class="order-section" id="orderSection">
+    <div class="order-card">
+
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Your name">
+
+      <label>Table No</label>
+      <input type="text" id="table" placeholder="Table number">
+
+      <h3>Order Items</h3>
+
+      <div class="item">
+
+        <div class="item-info">
+          <h4>Truffle Fries</h4>
+          <p>Rs.100</p>
+        </div>
+        <div class="qty">
+          <button onclick="changeQty('fries',-1)">−</button>
+          <span id="friesQty">0</span>
+          <button onclick="changeQty('fries',1)">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+
+        <div class="item-info">
+          <h4>Wagyu Burger</h4>
+          <p>Rs.140</p>
+        </div>
+        <div class="qty">
+          <button onclick="changeQty('burger',-1)">−</button>
+          <span id="burgerQty">0</span>
+          <button onclick="changeQty('burger',1)">+</button>
+        </div>
+      </div>
+
+      <label>Special Instructions</label>
+      <textarea placeholder="Allergies, no onions, spicy"></textarea>
+
+      <div class="total">
+        <span>Estimated Order</span>
+        <strong>Rs <span id="total">0</span></strong>
+      </div>
+
+      <!-- ✅ Save only -->
+      <button class="place-btn" onclick="saveOrder()">Save Order</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

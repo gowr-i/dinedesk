@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.top-bar {
+  background: #111827;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-bar span {
+  color: #facc15;
+}
+
+.container {
+  padding: 30px;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.status {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.paid {
+  color: #16a34a;
+}
+
+.pending {
+  color: #f59e0b;
+}
+
+.summary {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+.items {
+  margin-top: 10px;
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.items h4 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.items ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.items li {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #4b5563;
+}
